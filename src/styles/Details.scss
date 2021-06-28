@@ -1,0 +1,110 @@
+#details {
+  width: 90%;
+  height: 700px;
+  background-color: rgba(148, 109, 70, 0.5);
+  position: absolute;
+  left: 5%;
+  overflow-y: auto;
+  z-index: 10;
+  display: none;
+  border-radius: 8px;
+  padding: 2%;
+  box-shadow: 10px 10px 8px 10px #946d46;
+}
+
+h2 {
+  font-size: 4vw !important;
+}
+
+#listed {
+  height: auto;
+}
+
+.row {
+  height: auto;
+}
+
+#title {
+  text-align: center;
+  padding: 12px;
+  border-bottom: solid 2px #946d46;
+}
+
+#description {
+  padding: 12px;
+  border-bottom: solid 2px #946d46;
+  overflow-y: auto;
+  max-height: 30vh;
+}
+
+#long_description {
+  padding: 12px;
+  border-bottom: solid 2px #946d46;
+  overflow-y: auto;
+  max-height: 70vh;
+}
+
+#logoField {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+}
+
+.logoGallery {
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  transition: all ease-in-out 500ms;
+}
+
+#skills {
+  height: auto;
+}
+
+.skillLevel {
+  background-color: #946d46;
+  margin: 0;
+  padding: 0;
+}
+
+.skillRow {
+  height: auto !important;
+}
+
+.skillName {
+  height: 50px !important;
+}
+
+.picture-component--enter {
+  opacity: 0;
+}
+.picture-component--enter-active {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.picture-component--exit-active {
+  transform: scale(1.5);
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
+}
+
+.details-animation--enter {
+  transform: translateY(100%);
+}
+.details-animation--enter-active {
+  transform: translateY(0);
+  transition: transform 1s ease-in-out;
+}
+
+.details-animation--exit {
+  transform: translateY(0);
+}
+.details-animation--exit-active {
+  transform: translateY(100%);
+  transition: transform 1s ease-in-out;
+}

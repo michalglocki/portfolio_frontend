@@ -1,0 +1,74 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.App {
+  text-align: center;
+
+  &-header {
+    height: 120px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
+
+a {
+  color: black !important;
+  text-decoration: none;
+}
+
+p {
+  text-align: left;
+}
+
+.cookies--enter {
+  transform: translateY(100%);
+}
+.cookies--enter-active {
+  transform: translateY(0);
+  transition: transform 1s ease-in-out;
+}
+
+.cookies--exit-active {
+  transform: translateY(100%);
+  transition: transform 1s ease-in-out;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+html,
+body {
+  font-family: "Kalam" !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f0b982;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #946d46;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

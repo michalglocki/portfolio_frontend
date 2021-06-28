@@ -1,0 +1,10 @@
+#mainMenu {
+  height: auto;
+}
+.main-menu-component--enter {
+  transform: rotateX(90deg);
+}
+.main-menu-component--enter-active {
+  transform: rotateX(0);
+  transition: transform 1s ease-in-out;
+}

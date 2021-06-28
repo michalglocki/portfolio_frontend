@@ -1,0 +1,21 @@
+.skill-description-component--enter {
+  max-height: 0;
+  transform: rotateX(90deg);
+}
+.skill-description-component--enter-active {
+  max-height: 500px;
+  transform: rotateX(0deg);
+  transition: transform 1s ease-in-out, max-height 1s ease-in-out;
+}
+.skill-description-component--enter-done {
+  height: auto;
+}
+.skill-description-component--exit {
+  max-height: 500px;
+}
+
+.skill-description-component--exit-active {
+  max-height: 0;
+  transform: rotateX(90deg);
+  transition: transform 0.5s ease-in-out, max-height 0.5s ease-in-out;
+}

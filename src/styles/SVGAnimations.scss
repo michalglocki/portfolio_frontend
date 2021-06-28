@@ -1,0 +1,564 @@
+@keyframes skillsBarAnimations {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+#skill1_bar,
+#skill2_bar,
+#skill3_bar,
+#skill4_bar,
+#skill5_bar {
+  animation: skillsBarAnimations linear 2s infinite;
+  transform-box: fill-box;
+}
+
+#skill2_bar {
+  animation-delay: 0.3s;
+}
+
+#skill3_bar {
+  animation-delay: 0.1s;
+}
+
+#skill4_bar {
+  animation-delay: 0.5s;
+}
+
+#skill5_bar {
+  animation-delay: 0.2s;
+}
+
+@keyframes rightHandArmAnimation {
+  0% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(-15deg);
+  }
+}
+
+#right_hand_me {
+  animation: rightHandArmAnimation linear 1s alternate infinite;
+  transform-box: fill-box;
+  transform-origin: right bottom;
+}
+
+@keyframes leftHandArmAnimation {
+  0% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(15deg);
+  }
+}
+
+#left_hand_me {
+  animation: leftHandArmAnimation linear 1s alternate infinite;
+  transform-box: fill-box;
+  transform-origin: left bottom;
+}
+
+@keyframes hatAnimation {
+  0% {
+    transform: translateX(-5%) translateY(10%) scale(1);
+  }
+  40% {
+    transform: translateX(0%) translateY(0%) scale(0.9);
+  }
+  80% {
+    transform: translateX(23%) translateY(-2%) scale(0.7);
+  }
+  100% {
+    transform: translateX(23%) translateY(-2%) scale(0.7);
+  }
+}
+
+#graduate_hat {
+  animation: hatAnimation linear 2s alternate infinite;
+}
+
+@keyframes throwingArmAnimation {
+  0% {
+    transform: rotateZ(15deg);
+  }
+  50% {
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateZ(-5deg);
+  }
+}
+
+#throwing_arm {
+  animation: throwingArmAnimation linear 2s alternate infinite;
+  transform-box: fill-box;
+  transform-origin: right bottom;
+}
+
+@keyframes dartAnimation {
+  0% {
+    transform: translateX(12%) translateY(-5%);
+  }
+  50% {
+    transform: translateX(0%) translateY(0%);
+  }
+  100% {
+    transform: translateX(-24%) translateY(-17%);
+  }
+}
+
+#dart {
+  animation: dartAnimation linear 2s alternate infinite;
+}
+
+@keyframes signDirectionAnimation {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(-180deg);
+  }
+}
+
+#right_direction {
+  animation: signDirectionAnimation 2s ease-in-out alternate infinite;
+  transform-box: fill-box;
+  transform-origin: 18% 50%;
+}
+
+@keyframes leftDirectionAnimation {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(-180deg);
+  }
+}
+
+#left_direction {
+  animation: signDirectionAnimation 2.5s ease-in-out alternate infinite;
+  animation-delay: 0.2s;
+  transform-box: fill-box;
+  transform-origin: 82% 50%;
+}
+
+#right_direction {
+  animation: signDirectionAnimation 2s ease-in-out alternate infinite;
+  transform-box: fill-box;
+  transform-origin: 18% 50%;
+}
+
+@keyframes markingArmAnimation {
+  0% {
+    transform: rotateZ(0) scaleY(1);
+  }
+  100% {
+    transform: rotateZ(28deg) scaleY(0.8);
+  }
+}
+
+#marking_arm {
+  animation: markingArmAnimation 2s ease-in-out alternate infinite;
+  transform-box: fill-box;
+  transform-origin: top right;
+}
+
+@keyframes thirdMarkerAnimation {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-7%) translateY(-9%);
+  }
+  100% {
+    transform: translateX(-7%) translateY(-9%);
+  }
+}
+
+#third_mark {
+  animation: thirdMarkerAnimation 4s ease-in-out alternate infinite;
+}
+
+@keyframes linesAnimation {
+  0% {
+    fill: #e6e6e6;
+  }
+  25% {
+    fill: #e6e6e6;
+  }
+  30% {
+    fill: #6c63ff;
+  }
+  35% {
+    fill: #e6e6e6;
+  }
+  50% {
+    fill: #6c63ff;
+  }
+  76% {
+    fill: #6c63ff;
+  }
+  80% {
+    fill: #e6e6e6;
+  }
+  100% {
+    fill: #e6e6e6;
+  }
+}
+
+#first_row,
+#second_row {
+  animation: linesAnimation 8s ease-in-out infinite;
+}
+
+@keyframes codingHeadAnimation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  20% {
+    transform: rotateZ(-15deg);
+  }
+  60% {
+    transform: rotateZ(15deg);
+  }
+  80% {
+    transform: rotateZ(0deg);
+  }
+}
+
+#head_coding,
+#movie_head {
+  animation: codingHeadAnimation 5s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: bottom center;
+}
+
+@keyframes codingArmAnimation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  10% {
+    transform: rotateZ(-60deg);
+  }
+  30% {
+    transform: rotateZ(80deg) translateY(-10%) rotateX(45deg);
+  }
+  40% {
+    transform: rotateZ(100deg) translateY(-25%) rotateX(45deg);
+  }
+  60% {
+    transform: rotateZ(50deg) translateY(-5%) rotateX(45deg);
+  }
+  80% {
+    transform: rotateZ(-60deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+#right_arm_coding {
+  animation: codingArmAnimation 6s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: top center;
+}
+
+@keyframes coffeCodingArmAnimation {
+  0% {
+    transform: translateX(0%) translatey(0%);
+  }
+  10% {
+    transform: translateX(0%) translatey(0%);
+  }
+  20% {
+    transform: translateX(-40%) translatey(-10%);
+  }
+  30% {
+    transform: translateX(-40%) translatey(-25%);
+  }
+  40% {
+    transform: translateX(-33%) translatey(-35%);
+  }
+  60% {
+    transform: translateX(-40%) translatey(-25%);
+  }
+  70% {
+    transform: translateX(-40%) translatey(-10%);
+  }
+  80% {
+    transform: translateX(0%) translatey(0%);
+  }
+  100% {
+    transform: translateX(0%) translatey(0%);
+  }
+}
+
+#coffe_coding {
+  animation: coffeCodingArmAnimation 6s ease-in-out infinite;
+}
+
+@keyframes leftManArmAnimation {
+  0% {
+    transform: rotateZ(50deg);
+  }
+  25% {
+    transform: rotateZ(0);
+  }
+  40% {
+    transform: rotateZ(-2deg);
+  }
+  50% {
+    transform: rotateZ(2deg);
+  }
+  60% {
+    transform: rotateZ(-2deg);
+  }
+  75% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(50deg);
+  }
+}
+
+#left_man_arm {
+  animation: leftManArmAnimation 6s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: top left;
+}
+
+@keyframes rightManArmAnimation {
+  0% {
+    transform: rotateZ(-50deg);
+  }
+  25% {
+    transform: rotateZ(0);
+  }
+  40% {
+    transform: rotateZ(8deg);
+  }
+  50% {
+    transform: rotateZ(-2deg);
+  }
+  60% {
+    transform: rotateZ(8deg);
+  }
+  75% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(-50deg);
+  }
+}
+
+#right_man_arm {
+  animation: rightManArmAnimation 6s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: top right;
+}
+
+@keyframes line1ArmAnimation {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#pc_line1,
+#mob_line1 {
+  animation: line1ArmAnimation 5s ease-in-out infinite;
+  transform-box: fill-box;
+}
+
+@keyframes line2ArmAnimation {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#pc_line2,
+#mob_line2 {
+  animation: line2ArmAnimation 5s ease-in-out infinite;
+  transform-box: fill-box;
+}
+
+@keyframes line3ArmAnimation {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#pc_line3,
+#mob_line3 {
+  animation: line3ArmAnimation 5s ease-in-out infinite;
+  transform-box: fill-box;
+}
+
+@keyframes line4ArmAnimation {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#pc_line4,
+#mob_line4 {
+  animation: line4ArmAnimation 5s ease-in-out infinite;
+  transform-box: fill-box;
+}
+
+@keyframes line5ArmAnimation {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#pc_line5,
+#mob_line5 {
+  animation: line5ArmAnimation 5s ease-in-out infinite;
+  transform-box: fill-box;
+}
+
+@keyframes circlesArmAnimation {
+  0% {
+    opacity: 0;
+  }
+  47% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  53% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#pc_circles,
+#mobile_circles {
+  animation: circlesArmAnimation 5s ease-in-out infinite;
+}
+
+@keyframes squaresArmAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+#pc_squares,
+#mobile_squares {
+  animation: squaresArmAnimation 2s ease-in-out infinite;
+  transform-box: fill-box;
+}
+
+@keyframes youtubeBackgroundAnimation {
+  0% {
+    fill: white;
+  }
+  25% {
+    fill: rgb(212, 212, 125) !important;
+  }
+  50% {
+    fill: rgb(144, 218, 144);
+  }
+  75% {
+    fill: rgb(159, 159, 207);
+  }
+  100% {
+    fill: white;
+  }
+}
+
+#movie_background {
+  animation: youtubeBackgroundAnimation 10s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: bottom center;
+}

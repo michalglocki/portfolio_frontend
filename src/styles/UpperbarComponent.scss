@@ -1,0 +1,40 @@
+#upperbar {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.upperbarElement {
+  width: 20%;
+  height: 100%;
+  padding: 8px;
+}
+
+#logo {
+  padding: 0;
+  img {
+    height: 100%;
+  }
+}
+
+#logoPicture {
+  cursor: pointer;
+}
+
+.language {
+  overflow: hidden;
+  img {
+    max-height: 90%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+}
+
+#polish,
+#english {
+  cursor: pointer;
+}
